@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A heartfelt and magical Happy Birthday page for Mummy, filled with love, flowers, and beautiful wishes." />
+  <title>🌸 Happy Birthday Mummy! 🌸</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ========== SPLASH SCREEN ========== -->
+  <div id="splash-screen">
+    <div class="petals-container" id="splash-petals"></div>
+    <div class="splash-content">
+      <div class="splash-rose">🌹</div>
+      <h1 class="splash-title">A Special Day</h1>
+      <p class="splash-sub">Something beautiful awaits you, Mummy…</p>
+      <button id="open-btn" class="open-btn" aria-label="Open birthday surprise">
+        <span>Open With Love 💖</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========== MAIN PAGE ========== -->
+  <main id="main-page" class="hidden">
+
+    <!-- CANVAS for confetti/petals -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- SPARKLE CURSOR -->
+    <div id="sparkle-cursor"></div>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-bg"></div>
+      <div class="floating-petals" id="floating-petals"></div>
+
+      <div class="hero-content">
+        <p class="hero-tag">✨ With All My Love ✨</p>
+        <h1 class="hero-title">Happy Birthday,<br>Mummy!</h1>
+        <p class="hero-subtitle">
+          You are the heart of our home, the warmth in every moment,<br class="br-hide">
+          and the reason we smile. Today, we celebrate you! 🌹
+        </p>
+
+        <div class="candle-row" id="candle-row"></div>
+
+        <!-- MUSIC PLAYER -->
+        <div class="music-player" id="music-player">
+          <div class="music-disc" id="music-disc">🎵</div>
+          <div class="music-info">
+            <p class="music-title">Happy Birthday to You 🎂</p>
+            <p class="music-sub">A melody just for Mummy</p>
+          </div>
+          <button class="music-btn" id="music-btn" aria-label="Play or pause birthday music">
+            <span id="music-icon">▶</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- PHOTO SLIDER -->
+      <div class="photo-slider-wrapper" aria-label="Photo memories">
+        <div class="photo-slider" id="photo-slider">
+          <div class="photo-slide active">
+            <img src="1.jpeg" alt="Memory 1" class="photo-slide-img" />
+          </div>
+          <div class="photo-slide">
+            <img src="2.jpeg" alt="Memory 2" class="photo-slide-img" />
+          </div>
+        </div>
+        <button class="photo-prev" id="photo-prev" aria-label="Previous photo">‹</button>
+        <button class="photo-next" id="photo-next" aria-label="Next photo">›</button>
+        <div class="photo-dots" id="photo-dots">
+          <span class="photo-dot active"></span>
+          <span class="photo-dot"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- BLOW CANDLES SECTION -->
+    <section class="section blow-section" aria-label="Blow out candles and make a wish">
+      <div class="section-inner">
+        <h2 class="section-title">🕯️ Make a Wish!</h2>
+        <p class="section-sub">Click the candles to blow them out, Mummy. Close your eyes and wish!</p>
+        <div class="blow-cake-wrapper">
+          <div class="big-cake">
+            <div class="cake-candles-row" id="big-candles"></div>
+            <div class="cake-tier tier-top"></div>
+            <div class="cake-deco">🌹 🌸 🌹</div>
+            <div class="cake-tier tier-mid"></div>
+            <div class="cake-tier tier-bot"></div>
+          </div>
+          <div class="wish-status" id="wish-status">Click each candle to blow it out! 🌬️</div>
+          <button class="relight-btn" id="relight-btn" style="display:none;">🔥 Relight Candles</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-flowers">🌹🌸💖🌷🌺💐🌸🌹</div>
+      <p class="footer-text">Made with 💖 especially for you, Mummy</p>
+      <p class="footer-year">© 2026 — May this year be your most beautiful yet!</p>
+      <button class="celebrate-again-btn" id="celebrate-again-btn">🌸 Celebrate Again!</button>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
